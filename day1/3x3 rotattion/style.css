@@ -1,0 +1,17 @@
+.mdiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    height: 100px;
+    width: 100px;
+    font-size: xx-large;
+    margin: 4px;
+    border-radius: 20px;
+}
+button:active{
+    transform: translateY(2px);
+}
+button:hover {background-color: #b1b1b1}

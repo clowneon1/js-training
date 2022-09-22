@@ -1,0 +1,25 @@
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 5px solid black;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.c1{
+    background-color: rgb(46, 129, 98);
+    height: 600px;
+    width: 600px;
+}
+
+.c2{
+    background-color: rgb(13, 62, 68);
+    height: 400px;
+    width: 400px;
+}
+
+.c3{
+    background-color: rgb(93, 163, 65);
+    height: 200px;
+    width:  200px;
+}
