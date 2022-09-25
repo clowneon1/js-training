@@ -1,0 +1,52 @@
+<!-- Material table -->
+<div class="main-container">
+  <h1>Data Table</h1>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" class="">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let data">{{data.id}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="userId">
+        <th mat-header-cell *matHeaderCellDef>User Id</th>
+        <td mat-cell *matCellDef="let data">{{data.userId}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>Title</th>
+        <td mat-cell *matCellDef="let data">{{data.title}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="body">
+        <th mat-header-cell *matHeaderCellDef>Body</th>
+        <td mat-cell *matCellDef="let data">{{data.body}}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    </table>
+  </div>
+</div>
+
+
+<!-- normal table -->
+<!-- <div class="main-container">
+  <h1>Data Table</h1>
+  <div class="table-div">
+    <table>
+      <tr>
+        <th *ngFor="let head of headings">
+          {{head}}
+        </th>
+      </tr>
+      <tr *ngFor="let data of dataJson">
+        <td *ngFor="let col of index">
+          {{data[col]}}
+        </td>
+      </tr>
+    </table>
+  </div>
+</div> -->
