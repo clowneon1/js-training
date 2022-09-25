@@ -3,24 +3,23 @@
     <h1 class="font-style title">Currency Converter</h1>
     <div class="selection-container font-style">
       <div class="selectors">
-
         <select #c1 name="base" id="base" (click)="changeBase(c1.value)">
           <option *ngFor="let country of countries" [value]="country">{{country}}</option>
         </select>
-
+        <p>{{baseC}}</p>
+        <input type="number" [(ngModel)]="value">
+      </div>
+      <br>
+      <div class="selectors">
         <select #c2 name="base" id="target" (click)="changeTarget(c2.value)">
           <option *ngFor="let country of countries" [value]="country">{{country}}</option>
         </select>
-
-      </div>
-      <div class="inputs">
-        <p>{{baseC}}</p>
         <p>{{targetC}}</p>
-        <input type="number" [(ngModel)]="value">
         <input type="number" [value]="result">
       </div>
 
     </div>
+    <br>
     <button id="submit" (click)="convert()">Submit</button>
   </div>
 </div>
