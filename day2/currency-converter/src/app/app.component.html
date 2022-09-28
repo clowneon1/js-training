@@ -6,7 +6,8 @@
         <select #c1 name="base" id="base" (click)="changeBase(c1.value)">
           <option *ngFor="let country of countries" [value]="country">{{country}}</option>
         </select>
-        <p>{{baseC}}</p>
+        <label>{{baseC}}</label>
+        <br>
         <input type="number" [(ngModel)]="value">
       </div>
       <br>
@@ -14,10 +15,10 @@
         <select #c2 name="base" id="target" (click)="changeTarget(c2.value)">
           <option *ngFor="let country of countries" [value]="country">{{country}}</option>
         </select>
-        <p>{{targetC}}</p>
+        <label>{{targetC}}</label>
+        <br>
         <input type="number" [value]="result">
       </div>
-
     </div>
     <br>
     <button id="submit" (click)="convert()">Submit</button>
