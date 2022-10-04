@@ -1,8 +1,8 @@
 <!-- Material table -->
 <div class="main-container">
   <h1>Data Table</h1>
-  <div class="table-container">
-    <table mat-table [dataSource]="dataSource" class="">
+  <div class="table-container mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
 
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef>Id</th>
@@ -27,7 +27,11 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 
+
     </table>
+
+    
+
   </div>
 </div>
 
