@@ -1,0 +1,9 @@
+.main-container{
+  background-color: rgb(238, 241, 255);
+  color: rgb(0, 0, 150);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
